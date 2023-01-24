@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- bootstap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+   {{>navbar}}
+    <!-- main header -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+
+            <div class="col-md-10 col-12 mx-auto">
+               <div class="main_content">
+                <form action="" class="temp_form">
+                    <input type="text" placeholder="Enter your city name" id="cityname">
+                    <input type="submit" value="search" id="submitbtn">
+                </form>
+               </div>
+               
+<div class="tempinfo">
+    <div class="top_layer">
+        <p id="day">tue</p>
+        <p id="todaydata">13 oct</p>
+    </div>
+<div class="main_layer">
+    <p id="city_name">get output</p>
+    <div class="middle_layer data_hide">
+<p id="temp"><span id="temp_realvalue">0</span><sup>o</sup>C</p>
+<p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+    </div>
+</div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    {{>footer}}
+    
+    <script src="js/main.js"></script>
+</body>
+
+    {{!-- for weather --}}
+   
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
